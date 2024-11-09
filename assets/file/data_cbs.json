@@ -1,0 +1,45 @@
+[
+  {
+    "label": "paracetamol",
+    "commonName": "paracetamol",
+    "scientificName": "Acetaminophen",
+    "medicinalValues": {
+      "healthBenefits": ["Reduces pain", "Lowers fever"],
+      "keyActiveCompounds": ["Acetaminophen"],
+      "values": ["Analgesic", "Antipyretic"]
+    },
+    "usageAndPreparation": {
+      "preparationMethods": ["Tablet", "Syrup", "Effervescent Powder"],
+      "recommendedDosage": "500 mg every 4-6 hours as needed for adults",
+      "usage": "Provides temporary relief from mild to moderate pain and fever"
+    },
+    "diseaseCures": ["Headache", "Muscle pain", "Toothache", "Fever"],
+    "possibleSideEffects": ["Nausea", "Skin rash", "Liver damage with prolonged use"],
+    "interactionWarnings": [
+      "Avoid alcohol while taking this medication",
+      "Do not take with other medications containing acetaminophen"
+    ],
+    "recipes": [
+      {
+        "ingredients": ["Paracetamol tablet", "Glass of water"],
+        "preparation": [
+          "Take one 500 mg tablet with a full glass of water.",
+          "Do not exceed the recommended dosage of 4 grams per day."
+        ],
+        "benefits": ["Quick relief from headache", "Reduces fever effectively"]
+      },
+      {
+        "ingredients": ["Paracetamol effervescent powder", "Warm water"],
+        "preparation": [
+          "Dissolve one packet of effervescent powder in a cup of warm water.",
+          "Stir well and drink immediately."
+        ],
+        "benefits": ["Provides fast relief from pain", "Reduces body temperature"]
+      }
+    ],
+    "path": "assets/products/paracetamol.png",
+    "manufacturer": "Health Pharma Inc.",
+    "expiryDate": "2025-12-31",
+    "prescriptionRequired": false
+  }
+]

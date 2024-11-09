@@ -1,0 +1,40 @@
+class TText {
+static const String onboarding1 = "One Code to Verify If Your Medicine is Real or Fake!";
+static const String onboarding2 = "Get What You Need, Right Where You Are!";
+static const String onboarding3 = " Your Virtual Assistant for All Things Health! Ask Away! ";
+static const String onboardingtitle = " Scan with Satya Meds";
+static const String onboardingtitle2 = "Chat with Satya Med Bot ";
+static const String onboardingtitle3 = "Locate Nearest Store on Tap";
+static const String logintitle ="Login";
+static const String loginsubtitle ="सत्यमेड, स्वस्थ जीवन";
+
+static const String email = "Email";
+static const String password = "Password";
+static const String remember = "Remember me ";
+static const String forget = "Foreget Password";
+static const String signin ="SignIn";
+static const String createAccount = "Create Account";
+static const String signinwith = "Or Sign Up with";
+static const String signuptitles = "Let's Create Your Account";
+static const String firstname = "First name";
+static const String iagreeto = "I Agree with";
+static const String Termsofuse = "Terms of use";
+static const String privatepolicy = "Privacy Policy";
+static const String username = "Username";
+static const String verification = "Verification";
+static const String resendEmail = "Resend Email";
+static const String resendEmailIn= "Resend Email in";
+static const String phonenumber = "Phone number";
+static const String RememberMe = "Remember Me";
+static const String newPassword = "New Password";
+static const String lastname = "Last Name";
+static const String and = "&";
+static const String confirmemail = "Confirm Your Email";
+static const String youraccountcreatedtitle = " Your account has created successfully";
+static const String youraccountcreatedsubtitle = " Welcome to the world of medicinal plants and natural healing. Let’s start exploring the power of nature together! 🌱✨";
+static const String forgottitle = "Forgot Password?";
+static const String forgotsubtitle = "Enter your new password";
+static const String submit = "Submit";
+static const String changepw= "Password Reset Email Sent";
+static const String changepwsub ="Your Account Security is our privacy we have sent you secured link to make safety changes for your password and keep your account protetcted";
+}
