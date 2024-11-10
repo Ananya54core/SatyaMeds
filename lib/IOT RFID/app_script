@@ -1,0 +1,51 @@
+function doGet(e) {
+  // Call doPost when a GET request is received, for compatibility with both GET and POST methods.
+  return doPost(e);
+}
+
+function doPost(e) {
+  // Get data sent from NodeMCU
+  var uid = e.parameter.cardID;
+
+  // Normalize UID by removing spaces and converting to uppercase
+  uid = normalizeUID(uid);
+
+  // Predefined data based on UID
+  var location = getLocation(uid);
+  var medicineName = getMedicineName(uid);
+
+  // Get the current date and time
+  var currentDate = new Date();
+  var date = Utilities.formatDate(currentDate, Session.getScriptTimeZone(), "yyyy-MM-dd");
+  var time = Utilities.formatDate(currentDate, Session.getScriptTimeZone(), "HH:mm:ss");
+
+  // Access the spreadsheet and append a row with the data
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  sheet.appendRow([uid, date, time, location, medicineName]);
+
+  // Send a success response
+  return ContentService.createTextOutput("Data received successfully");
+}
+
+// Function to normalize UID by removing spaces and converting to uppercase
+function normalizeUID(uid) {
+  return uid.replace(/\s+/g, "").toUpperCase(); // Remove spaces and convert to uppercase
+}
+
+// Function to get location based on normalized UID
+function getLocation(uid) {
+  if (uid === "634E08DA") return "Pharmacy 1";
+  else if (uid === "FAE7963F") return "Pharmacy 2";
+  else if (uid === "0317E2E3") return "Hospital Pharmacy";
+  else if (uid === "F327CDE3") return "Supermarket Pharmacy";
+  else return "Unknown Location";
+}
+
+// Function to get medicine name based on normalized UID
+function getMedicineName(uid) {
+  if (uid === "634E08DA") return "Paracetamol";
+  else if (uid === "FAE7963F") return "PudinHara";
+  else if (uid === "0317E2E3") return "Ibuprofen";
+  else if (uid === "F327CDE3") return "Antibiotic";
+  else return "Unknown Drug";
+}
